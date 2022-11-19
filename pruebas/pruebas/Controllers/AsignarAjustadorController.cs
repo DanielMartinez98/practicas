@@ -12,7 +12,7 @@ using Newtonsoft.Json.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.Numerics;
 
-namespace pruebasP.Controllers
+namespace pruebas.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

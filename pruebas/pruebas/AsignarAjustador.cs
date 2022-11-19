@@ -1,4 +1,4 @@
-namespace pruebasP
+namespace pruebas
 {
     public class AsignarAjustador
     {

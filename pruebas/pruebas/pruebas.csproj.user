@@ -4,7 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\mmdan\source\repos\pruebas\pruebas\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <ActiveDebugProfile>pruebas</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\mmdan\source\repos\practicas\pruebas\pruebas\Properties\PublishProfiles\pruebas20221118164914 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

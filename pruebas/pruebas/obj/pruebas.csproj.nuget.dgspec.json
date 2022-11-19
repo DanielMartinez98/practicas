@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mmdan\\source\\repos\\pruebas\\pruebas\\pruebas.csproj": {}
+    "C:\\Users\\mmdan\\source\\repos\\practicas\\pruebas\\pruebas\\pruebas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mmdan\\source\\repos\\pruebas\\pruebas\\pruebas.csproj": {
+    "C:\\Users\\mmdan\\source\\repos\\practicas\\pruebas\\pruebas\\pruebas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmdan\\source\\repos\\pruebas\\pruebas\\pruebas.csproj",
+        "projectUniqueName": "C:\\Users\\mmdan\\source\\repos\\practicas\\pruebas\\pruebas\\pruebas.csproj",
         "projectName": "pruebas",
-        "projectPath": "C:\\Users\\mmdan\\source\\repos\\pruebas\\pruebas\\pruebas.csproj",
+        "projectPath": "C:\\Users\\mmdan\\source\\repos\\practicas\\pruebas\\pruebas\\pruebas.csproj",
         "packagesPath": "C:\\Users\\mmdan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmdan\\source\\repos\\pruebas\\pruebas\\obj\\",
+        "outputPath": "C:\\Users\\mmdan\\source\\repos\\practicas\\pruebas\\pruebas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,6 +60,14 @@
             "Microsoft.AspNet.WebApi.SelfHost": {
               "target": "Package",
               "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Server.Kestrel.Core": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Server.Kestrel.Https": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
