@@ -175,7 +175,8 @@ namespace pruebas.Controllers
                     //se pondera el algoritmo a un maximo de 100 puntos
                     float counts = 0;
                     counts += (p1 * ((1.0f * minim) / Int32.Parse(array[i][5])));
-                    counts += p2 * (Int32.Parse(array[i][1]) / 3.0f);
+                    count += p3 * (Int32.Parse(array[i][2]));
+                    
                     if (used.Count() > 0)
                     {
                         Console.WriteLine("here");
@@ -183,13 +184,12 @@ namespace pruebas.Controllers
                         Console.WriteLine(ax.ToString());
                         if (!(used.IndexOf(ax) >= 0))
                         {
-                            count += p3 * (Int32.Parse(array[i][2]));
+                            counts += p2 * (Int32.Parse(array[i][1]) / 3.0f);
                         }
-                        //count += p3 * (Int32.Parse(array[i][2]));
                     }
                     else
                     {
-                        count += p3 * (Int32.Parse(array[i][2]));
+                        counts += p2 * (Int32.Parse(array[i][1]) / 3.0f);
                     }
                     array[i][6] = count.ToString();
                     //se checa si el valor es el maximo

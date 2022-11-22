@@ -16,7 +16,7 @@ namespace pruebas
         }
         public static void OnTimedEvent()
         {
-            System.Threading.Thread.Sleep(10000);
+            System.Threading.Thread.Sleep(300000);
             clear = true;
             OnTimedEvent();
         }
