@@ -1,3 +1,7 @@
+using pruebas;
+using System.Timers;
+using System.Threading;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -18,5 +22,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+Class.startThread();
 app.Run();
