@@ -49,10 +49,10 @@ namespace pruebas.Controllers
         }
         static async Task<String> dirToLatLon(string a)
         {
-            
+            String Key = "";   
             HttpClient request = new HttpClient();
             //se crea el GET de googlemaps distance matrix
-            string strUrl = String.Format($"https://maps.googleapis.com/maps/api/geocode/json?address={a}&key=AIzaSyBsnBSa1QAyAm91Xofsh7zoqAuseJJQnHE");
+            string strUrl = String.Format($"https://maps.googleapis.com/maps/api/geocode/json?address={a}&key={Key}");
             //Console.WriteLine(strUrl);
             //se lee la respuesta
             HttpResponseMessage response = await request.GetAsync(strUrl);
