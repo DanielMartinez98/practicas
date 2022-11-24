@@ -22,6 +22,7 @@ namespace pruebas.Controllers
         static async Task<String> main(float a, float b, List<String[]> c) 
         {
             String ap = "";
+            String Key = "";
             //se combierte el array de arrays en un formato legible para googlemaps distance matrix
             for (int i = 0; i < c.Count(); i++)
             {
@@ -38,7 +39,7 @@ namespace pruebas.Controllers
             //crea el lector del api
             HttpClient request = new HttpClient();
             //se crea el GET de googlemaps distance matrix
-            string strUrl = String.Format($"https://maps.googleapis.com/maps/api/distancematrix/json?origins={a},{b}&destinations={ap}&key=AIzaSyD4BTq58XUAsnHDkSZUvwbNC-mJSTXUqLM");
+            string strUrl = String.Format($"https://maps.googleapis.com/maps/api/distancematrix/json?origins={a},{b}&destinations={ap}&key={Key}");
             //Console.WriteLine(strUrl);
             //se lee la respuesta
             HttpResponseMessage response = await request.GetAsync(strUrl);
@@ -175,7 +176,7 @@ namespace pruebas.Controllers
                     //se pondera el algoritmo a un maximo de 100 puntos
                     float counts = 0;
                     counts += (p1 * ((1.0f * minim) / Int32.Parse(array[i][5])));
-                    count += p3 * (Int32.Parse(array[i][2]));
+                    counts += p3 * (Int32.Parse(array[i][2]));
                     
                     if (used.Count() > 0)
                     {
@@ -191,9 +192,9 @@ namespace pruebas.Controllers
                     {
                         counts += p2 * (Int32.Parse(array[i][1]) / 3.0f);
                     }
-                    array[i][6] = count.ToString();
+                    array[i][6] = counts.ToString();
                     //se checa si el valor es el maximo
-                    if (float.Parse(array[max][6]) < count)
+                    if (float.Parse(array[max][6]) < counts)
                     {
                         max = i;
                     }
