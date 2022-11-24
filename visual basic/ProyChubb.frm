@@ -446,14 +446,14 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Sub API_SeleccionAutomaticaAjustador()
 Dim API_SeleccionAutoAjustador_HostAPI As String, API_SeleccionAutoAjustador_EstadoMunicipio As String, API_SeleccionAutoAjustador_Colonia As String, API_SeleccionAutoAjustador_Calle As String, API_SeleccionAutoAjustador_CodigoPostal As String
-API_SeleccionAutoAjustador_HostAPI = "http://189.159.44.7:5007/api/AsignarAjustadorController2"
-API_SeleccionAutoAjustador_EstadoMunicipio = Text8.Text
+API_SeleccionAutoAjustador_HostAPI = "[######0]"
+API_SeleccionAutoAjustador_EstadoMunicipio = [######1].Text
 API_SeleccionAutoAjustador_EstadoMunicipio = Replace(API_SeleccionAutoAjustador_EstadoMunicipio, " ", "+")
-API_SeleccionAutoAjustador_Colonia = "+" & Combo2.Text
+API_SeleccionAutoAjustador_Colonia = "+" & [######2].Text
 API_SeleccionAutoAjustador_Colonia = Replace(API_SeleccionAutoAjustador_Colonia, " ", "+")
-API_SeleccionAutoAjustador_Calle = "+" & Text12.Text
+API_SeleccionAutoAjustador_Calle = "+" & [######3].Text
 API_SeleccionAutoAjustador_Calle = Replace(API_SeleccionAutoAjustador_Calle, " ", "+")
-API_SeleccionAutoAjustador_CodigoPostal = "+" & Text10.Text
+API_SeleccionAutoAjustador_CodigoPostal = "+" & [######4].Text
 Dim API_SeleccionAutoAjustador_RequestObject As Object
 Dim API_SeleccionAutoAjustador_ResponseString As String
 Dim API_SeleccionAutoAjustador_RequestBody As String
@@ -477,7 +477,7 @@ API_SeleccionAutoAjustador_ResponseString = Replace(API_SeleccionAutoAjustador_R
 Dim API_SeleccionAutoAjustador_IDAjustadorApropiado As Integer
 API_SeleccionAutoAjustador_IDAjustadorApropiado = CInt(API_SeleccionAutoAjustador_ResponseString)
 If (API_SeleccionAutoAjustador_IDAjustadorApropiado = 0) Then
-MsgBox "OcurriÛ un error con el API de SelecciÛn Autom·tica. Registre el usuario de manera manual."
+MsgBox "Ocurri√≥ un error con el API de Selecci√≥n Autom√°tica. Registre el usuario de manera manual."
 Else
 MsgBox "El ajustador seleccionado es el de ID " & API_SeleccionAutoAjustador_ResponseString
 End If
